@@ -9,6 +9,6 @@ input.addEventListener("input", _.debounce((e) => {
 
 const box = document.querySelector("#box")
 box.addEventListener("mousemove", _.debounce((e) => {
-    box.style.left = `${e.pageX - 25}px`;
-    box.style.top = `${e.pageY +- 25}px`;
-}))
+    box.style.left = `${e.clientX - 30}px`;
+    box.style.top = `${e.clientY +- 30}px`;
+}, 100))
